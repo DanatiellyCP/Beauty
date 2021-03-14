@@ -1,0 +1,71 @@
+object DmDados: TDmDados
+  OldCreateOrder = False
+  Height = 482
+  HorizontalOffset = 283
+  VerticalOffset = 145
+  Width = 990
+  object Connection: TZConnection
+    ControlsCodePage = cCP_UTF16
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'controls_cp=CP_UTF16'
+      'AutoEncodeStrings=ON'
+    )
+    Connected = True
+    Port = 0
+    Database = 'Provider=MSDASQL.1;Persist Security info=false;Data Source=db_beauty'
+    Protocol = 'ado'
+    Left = 684
+    Top = 44
+  end
+  object TblUsuario: TZTable
+    Connection = Connection
+    TableName = 'usuario'
+    Left = 102
+    Top = 90
+    object TblUsuarioId: TLongintField
+      FieldKind = fkData
+      FieldName = 'Id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = True
+      Required = False
+    end
+    object TblUsuarioNome: TWideStringField
+      FieldKind = fkData
+      FieldName = 'Nome'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object TblUsuarioSenha: TWideStringField
+      FieldKind = fkData
+      FieldName = 'Senha'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 10
+    end
+    object TblUsuarioemail: TWideStringField
+      FieldKind = fkData
+      FieldName = 'email'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+  end
+  object DsUsuario: TDataSource
+    DataSet = TblUsuario
+    Left = 102
+    Top = 161
+  end
+end
