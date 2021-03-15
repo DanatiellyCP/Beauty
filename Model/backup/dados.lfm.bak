@@ -1,0 +1,21 @@
+object DmDados: TDmDados
+  OldCreateOrder = False
+  Height = 482
+  HorizontalOffset = 283
+  VerticalOffset = 145
+  Width = 990
+  object Connection: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=ON'
+    )
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'db_beauty'
+    User = 'root'
+    Protocol = 'mysqld-5'
+    Left = 44
+    Top = 57
+  end
+end
