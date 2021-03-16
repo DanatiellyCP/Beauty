@@ -5,7 +5,7 @@ Projeto de gerenciamento de salão de beleza, com Lazarus e Mysql.
 Criar um sistema simples para agendamento de atendimentos em salões de beleza, e criação de relatórios, como agenda do dia, 
 comprovante de agendamento, e relatóro financeiro  básico, baseado nos atendimentos, feitos entre períodos.
 
-Dependências:
+- Dependências:
 
 Conexão com o Banco:
 Para conectar com o banco de dados Mysql, o projeto  está utilizando o componente Zeos.
