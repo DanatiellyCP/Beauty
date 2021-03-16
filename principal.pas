@@ -89,6 +89,11 @@ begin
   // chamar o form de usuarios
   FrmUsuario.Show;
 
+  FrmUsuario.Parent := Panel1;
+  FrmUsuario.Align:= alClient;
+  FrmUsuario.BorderStyle:= bsNone;
+
+
 end;
 
 procedure TFrmPrincipal.Label4MouseLeave(Sender: TObject);

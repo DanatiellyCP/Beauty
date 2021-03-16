@@ -31,6 +31,7 @@ type
     procedure Label3MouseLeave(Sender: TObject);
     procedure Label3MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
       );
+    procedure Label4Click(Sender: TObject);
     procedure Label4MouseLeave(Sender: TObject);
     procedure Label4MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
       );
@@ -59,7 +60,7 @@ var
   FrmPrincipal: TFrmPrincipal;
 
 implementation
-uses dados;
+uses dados, usuarios;
 
 {$R *.lfm}
 
@@ -81,6 +82,18 @@ procedure TFrmPrincipal.Label3MouseMove(Sender: TObject; Shift: TShiftState; X,
 begin
   // salão
   Label3.Font.Color:= clCream;
+end;
+
+procedure TFrmPrincipal.Label4Click(Sender: TObject);
+begin
+  // chamar o form de usuarios
+  FrmUsuario.Show;
+
+  FrmUsuario.Parent := Panel1;
+  FrmUsuario.Align:= alClient;
+  FrmUsuario.BorderStyle:= bsSingle;
+
+
 end;
 
 procedure TFrmPrincipal.Label4MouseLeave(Sender: TObject);

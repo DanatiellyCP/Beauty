@@ -1,8 +1,10 @@
 object FrmUsuario: TFrmUsuario
-  Left = 283
-  Height = 313
-  Top = 145
-  Width = 641
+  Left = 314
+  Height = 402
+  Top = 215
+  Width = 698
+  BorderIcons = [biSystemMenu]
   Caption = 'Uuários'
+  OnShow = FormShow
   LCLVersion = '2.0.12.0'
 end

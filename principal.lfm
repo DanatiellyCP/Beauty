@@ -16,13 +16,14 @@ object FrmPrincipal: TFrmPrincipal
     Top = 0
     Width = 783
     Align = alClient
+    Anchors = [akRight, akBottom]
     ClientHeight = 517
     ClientWidth = 783
     Color = clCream
     ParentColor = False
     TabOrder = 0
     object Panel2: TPanel
-      Left = 568
+      Left = 0
       Height = 513
       Top = 0
       Width = 234
@@ -150,7 +151,7 @@ object FrmPrincipal: TFrmPrincipal
       end
     end
     object GroupBox1: TGroupBox
-      Left = 127
+      Left = 352
       Height = 194
       Top = 112
       Width = 312
