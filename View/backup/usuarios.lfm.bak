@@ -1,0 +1,8 @@
+object FrmUsuario: TFrmUsuario
+  Left = 283
+  Height = 313
+  Top = 145
+  Width = 641
+  Caption = 'Uuários'
+  LCLVersion = '2.0.12.0'
+end

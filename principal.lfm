@@ -1,4 +1,4 @@
-object Form1: TForm1
+object FrmPrincipal: TFrmPrincipal
   Left = 416
   Height = 517
   Top = 212
@@ -8,6 +8,7 @@ object Form1: TForm1
   ClientHeight = 517
   ClientWidth = 783
   Color = clWhite
+  OnCreate = FormCreate
   LCLVersion = '2.0.12.0'
   object Panel1: TPanel
     Left = 0
@@ -21,50 +22,185 @@ object Form1: TForm1
     ParentColor = False
     TabOrder = 0
     object Panel2: TPanel
-      Left = 600
+      Left = 568
       Height = 513
-      Top = 1
-      Width = 202
+      Top = 0
+      Width = 234
+      ClientHeight = 513
+      ClientWidth = 234
       Color = 12615935
       ParentColor = False
       TabOrder = 0
+      OnMouseMove = Panel2MouseMove
+      object Label3: TLabel
+        Cursor = crHandPoint
+        Left = 70
+        Height = 29
+        Top = 72
+        Width = 52
+        Caption = 'Salão'
+        DragCursor = crHandPoint
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -24
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        OnMouseLeave = Label3MouseLeave
+        OnMouseMove = Label3MouseMove
+      end
+      object Label4: TLabel
+        Cursor = crHandPoint
+        Left = 66
+        Height = 29
+        Top = 128
+        Width = 73
+        Caption = 'Usuário'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -24
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        OnClick = Label4Click
+        OnMouseLeave = Label4MouseLeave
+        OnMouseMove = Label4MouseMove
+      end
+      object Label5: TLabel
+        Cursor = crHandPoint
+        Left = 70
+        Height = 29
+        Top = 184
+        Width = 76
+        Caption = 'Clientes'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -24
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        OnMouseLeave = Label5MouseLeave
+        OnMouseMove = Label5MouseMove
+      end
+      object Label6: TLabel
+        Cursor = crHandPoint
+        Left = 70
+        Height = 29
+        Top = 238
+        Width = 87
+        Caption = 'Produtos'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -24
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        OnMouseLeave = Label6MouseLeave
+        OnMouseMove = Label6MouseMove
+      end
+      object Label7: TLabel
+        Cursor = crHandPoint
+        Left = 74
+        Height = 29
+        Top = 288
+        Width = 72
+        Caption = 'Agenda'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -24
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        OnMouseLeave = Label7MouseLeave
+        OnMouseMove = Label7MouseMove
+      end
+      object Label8: TLabel
+        Cursor = crHandPoint
+        Left = 52
+        Height = 29
+        Top = 346
+        Width = 137
+        Caption = 'Administração'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -24
+        Font.Name = 'Arial Narrow'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+        OnMouseLeave = Label8MouseLeave
+        OnMouseMove = Label8MouseMove
+      end
     end
     object GroupBox1: TGroupBox
-      Left = 176
-      Height = 200
+      Left = 127
+      Height = 194
       Top = 112
       Width = 312
       Caption = 'Login'
-      ClientHeight = 180
+      ClientHeight = 174
       ClientWidth = 308
       TabOrder = 1
       object Label1: TLabel
-        Left = 6
-        Height = 15
+        Left = 8
+        Height = 17
         Top = 18
-        Width = 43
+        Width = 51
         Caption = 'Usuário:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Segoe UI'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
         ParentColor = False
+        ParentFont = False
       end
       object EditNomeUser: TEdit
-        Left = 58
+        Left = 62
         Height = 23
         Top = 15
         Width = 240
         TabOrder = 0
       end
       object Label2: TLabel
-        Left = 6
-        Height = 15
-        Top = 55
-        Width = 35
+        Left = 8
+        Height = 17
+        Top = 69
+        Width = 41
         Caption = 'Senha:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Segoe UI'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
         ParentColor = False
+        ParentFont = False
       end
       object EditSenhaUser: TEdit
-        Left = 58
+        Left = 62
         Height = 23
-        Top = 50
+        Top = 64
         Width = 240
         TabOrder = 1
       end
@@ -74,6 +210,7 @@ object Form1: TForm1
         Top = 112
         Width = 136
         Caption = 'Entrar'
+        Color = clWhite
         TabOrder = 2
       end
       object Button2: TButton
@@ -82,6 +219,7 @@ object Form1: TForm1
         Top = 112
         Width = 136
         Caption = 'Cancelar'
+        Color = clWhite
         TabOrder = 3
       end
     end
