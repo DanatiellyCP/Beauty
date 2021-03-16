@@ -20,7 +20,6 @@
         <ComponentName Value="FrmPrincipal"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
         <TopLine Value="86"/>
         <CursorPos X="34" Y="94"/>
         <UsageCount Value="26"/>
@@ -53,6 +52,7 @@
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FrmUsuario"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="12"/>
         <CursorPos X="9" Y="46"/>
