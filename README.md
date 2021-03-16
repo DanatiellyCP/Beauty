@@ -11,12 +11,12 @@ A configuração do driver, pode ser feita via ODBC do Windows. se o projeto for
 precisam ser de 32 bits, se o projeto for 64 bits tudo deve ser configurado para 64 bits
 
 - Configurando Driver de conexão Mysql:
-1- Baixe o driver do MySql para o Windows.
-2- Instale o drive.
-3- Abra o ODBC do Window.
-4- Clique em Adcionar.
-5- Configure a conexão com Mysql, passando os parametros do banco. 
-6- Se ao testar a conexão e ela estiver tudo OK. o Driver foi configurado
-7- O componente de conexão do zeos poderá se conectar ao banco. 
+- 1- Baixe o driver do MySql para o Windows.
+- 2- Instale o drive.
+- 3- Abra o ODBC do Window.
+- 4- Clique em Adcionar.
+- 5- Configure a conexão com Mysql, passando os parametros do banco. 
+- 6- Se ao testar a conexão e ela estiver tudo OK. o Driver foi configurado
+- 7- O componente de conexão do zeos poderá se conectar ao banco. 
 
 
